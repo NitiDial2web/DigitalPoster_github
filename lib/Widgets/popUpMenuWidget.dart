@@ -1,3 +1,4 @@
+import 'package:dposter/UI/signInView.dart';
 import 'package:flutter/material.dart';
 
 import '../UI/myBusinessView.dart';
@@ -47,11 +48,17 @@ class PopUpMenu {
               MaterialPageRoute(
                 builder: (context) => PrivacyPolicyView(),
               ));
-        } else {
+        } else if (value == 5) {
           Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => TermAndConditionsView(),
+              ));
+        } else {
+          Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SignInView(),
               ));
         }
       },
@@ -66,6 +73,7 @@ class PopUpMenu {
           PopupMenuItem(child: Text('Rate Us'), value: 3),
           PopupMenuItem(child: Text('Privacy Policy'), value: 4),
           PopupMenuItem(child: Text('Terms & Service'), value: 5),
+          PopupMenuItem(child: Text('Logout'), value: 6),
         ];
       },
     );

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../Widgets/backgoundWidget.dart';
 import '../Widgets/popUpMenuWidget.dart';
 
-class PrimiumView extends StatelessWidget {
-  const PrimiumView({super.key});
+class PremiumView extends StatelessWidget {
+  const PremiumView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class PrimiumView extends StatelessWidget {
             elevation: 0,
             backgroundColor: const Color(0xFFD9D9D9),
             title: const Text(
-              "Primium",
+              "Premium",
               style: TextStyle(color: Colors.black),
             ),
           ),

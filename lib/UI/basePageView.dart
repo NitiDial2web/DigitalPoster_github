@@ -1,10 +1,11 @@
 import 'package:dposter/UI/signInView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'exploreView.dart';
 import 'homePageView.dart';
-import 'primiumView.dart';
+import 'premiumView.dart';
 import 'profileView.dart';
 
 class BasePageView extends StatefulWidget {
@@ -22,7 +23,7 @@ class _BasePageViewState extends State<BasePageView> {
     List _currentScreen = [
       HomePageView(),
       ExploreView(),
-      PrimiumView(),
+      PremiumView(),
       ProfileView(
         homeBuildContext: context,
       )
@@ -88,10 +89,11 @@ class _BasePageViewState extends State<BasePageView> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 7, horizontal: 20),
-                        child: Image.asset(
-                          "assets/icons/Compass.png",
-                          width: 21,
-                        ),
+                        // child: Image.asset(
+                        //   "assets/icons/Compass.png",
+                        //   width: 21,
+                        // ),
+                        child: FaIcon(FontAwesomeIcons.solidCompass,color: Colors.white,),
                       )),
                 ),
               ),
@@ -114,10 +116,11 @@ class _BasePageViewState extends State<BasePageView> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 7, horizontal: 20),
-                        child: Image.asset(
-                          "assets/icons/Crown.png",
-                          width: 21,
-                        ),
+                        // child: Image.asset(
+                        //   "assets/icons/Crown.png",
+                        //   width: 21,
+                        // ),
+                        child: FaIcon(FontAwesomeIcons.crown,color: Colors.white,),
                       )),
                 ),
               ),
@@ -140,10 +143,11 @@ class _BasePageViewState extends State<BasePageView> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 7, horizontal: 20),
-                        child: Image.asset(
-                          "assets/icons/Account.png",
-                          width: 21,
-                        ),
+                        // child: Image.asset(
+                        //   "assets/icons/Account.png",
+                        //   width: 21,
+                        // ),
+                        child: FaIcon(FontAwesomeIcons.solidUser,color: Colors.white,),
                       )),
                 ),
               )

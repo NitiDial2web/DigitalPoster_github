@@ -38,11 +38,23 @@ class _RateUsViewState extends State<RateUsView> {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
+                  height: 220,
+                  width: 100,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    boxShadow: [
+                      CustomBoxShadow(
+                          color: Colors.black,
+                          offset: Offset(5.0, 5.0),
+                          blurRadius: 5.0,
+                          blurStyle: BlurStyle.outer)
+                    ],
+                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(15.0),
                         child: Text(
                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
                             style: TextStyle(
@@ -70,18 +82,6 @@ class _RateUsViewState extends State<RateUsView> {
                           ],
                         ),
                       )
-                    ],
-                  ),
-                  height: 200,
-                  width: 100,
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    boxShadow: [
-                      CustomBoxShadow(
-                          color: Colors.black,
-                          offset: Offset(5.0, 5.0),
-                          blurRadius: 5.0,
-                          blurStyle: BlurStyle.outer)
                     ],
                   ),
                 ),

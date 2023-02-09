@@ -12,6 +12,8 @@ class MyPostView extends StatefulWidget {
 
 class _MyPostViewState extends State<MyPostView> {
   bool isImageSelected = true;
+  int _image = 10;
+  int _video = 15;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -147,7 +149,7 @@ class _MyPostViewState extends State<MyPostView> {
                                     Radius.circular(12))),
                           ),
                         ),
-                    itemCount: 5)
+                    itemCount: isImageSelected?_image:_video)
               ],
             ),
           ),
