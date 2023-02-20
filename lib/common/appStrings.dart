@@ -11,6 +11,8 @@ class AppStrings{
   static const kSmallBusiness = 'Small Business';
   static const kIndustry = 'Industry';
 
+
+
   //Premium Page
   static const kPremiumActivated = 'Premium Activated';
   static const kAccessDesc = 'Access to all posts and Premium Posts with no ads and save posts with high quality.';
